@@ -44,7 +44,7 @@ export const metaConfig = {
     { property: 'twitter:card', content: 'summary_large_image' },
     {
       property: 'twitter:title',
-      content: './dailyTasks'
+      content: 'Transform your learning experience with Quasi AI'
     },
     {
       property: 'twitter:description',
