@@ -3,7 +3,9 @@
     <div
       class="w-full max-w-[569px] rounded-2xl bg-white py-6 text-center text-2xl lg:shadow-md"
     >
-      <QuasiLogo class="mx-auto w-24 sm:w-28" />
+      <NuxtLink to="/">
+        <QuasiLogo class="mx-auto w-24 sm:w-28" />
+      </NuxtLink>
 
       <div class="mx-8 flex flex-col gap-4 py-6 sm:mx-12">
         <UText class="text-left text-lg font-bold">Sign up with email</UText>
