@@ -1,5 +1,3 @@
-# Landing Page
-
 ## Setup
 
 ```bash
