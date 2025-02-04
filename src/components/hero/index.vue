@@ -17,7 +17,7 @@
       <UButton color="white" class="text-blue">Watch a demo</UButton>
     </div>
     <div class="mt-8">
-      <VideoTmp class="w-full" />
+      <VideoTmp class="h-auto w-full" />
     </div>
   </div>
 </template>
