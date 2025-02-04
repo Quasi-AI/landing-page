@@ -2,18 +2,24 @@
   <div
     class="flex flex-col items-center justify-between bg-[#C6E6F3] px-8 py-6 lg:flex-row"
   >
-    <div class="py-2 lg:py-0">
+    <div class="py-4 lg:py-0">
       <quasiaiLogo />
     </div>
 
-    <ul class="flex space-x-2">
-      <OkSocial />
-      <VkSocial />
-      <TelegramSocial />
-      <FacebookSocial />
-      <Instagram />
+    <ul class="flex flex-col gap-4 space-x-2 lg:flex-row lg:gap-0">
+      <div class="flex space-x-2">
+        <OkSocial />
+        <VkSocial />
+        <TelegramSocial />
+        <FacebookSocial />
+        <Instagram />
+      </div>
 
-      <p class="pl-6 text-sm">© 2025 - Copyright <br />All rights reserved</p>
+      <div>
+        <p class="pl-6 text-center text-sm lg:text-left">
+          © 2025 - Copyright <br />All rights reserved
+        </p>
+      </div>
     </ul>
   </div>
 </template>
