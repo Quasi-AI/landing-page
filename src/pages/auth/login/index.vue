@@ -17,7 +17,7 @@
       </div>
 
       <div class="mx-8 flex flex-col gap-4 py-6 sm:mx-12">
-        <UText class="text-left text-lg font-bold">Sign in with email</UText>
+        <h1 class="text-left text-lg font-bold">Sign in with email</h1>
         <UInput
           v-model="email"
           type="email"
