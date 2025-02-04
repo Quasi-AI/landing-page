@@ -35,9 +35,11 @@
     </div>
   </div>
   <div class="my-10 flex items-center justify-center">
-    <UButton color="cyan" class="flex w-[420px] items-center justify-center">
-      Start Learning now
-    </UButton>
+    <NuxtLink to="/auth/login"
+      ><UButton color="cyan" class="flex w-[420px] items-center justify-center">
+        Start Learning now
+      </UButton></NuxtLink
+    >
   </div>
 </template>
 

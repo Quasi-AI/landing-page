@@ -11,7 +11,9 @@
       </p>
     </div>
     <div class="mt-8 flex gap-4">
-      <UButton color="cyan">Start learning now</UButton>
+      <NuxtLink to="/auth/login"
+        ><UButton color="cyan">Start learning now</UButton></NuxtLink
+      >
       <UButton color="white" class="text-blue">Watch a demo</UButton>
     </div>
     <div class="m-12">

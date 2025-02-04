@@ -6,7 +6,9 @@
       <li>Features</li>
       <li>How it works</li>
       <li>Pricing</li>
-      <UButton color="cyan">Get Started</UButton>
+      <NuxtLink to="/auth/login"
+        ><UButton color="cyan">Get Started</UButton></NuxtLink
+      >
     </ul>
   </div>
 </template>
