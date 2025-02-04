@@ -15,7 +15,7 @@
       </div>
 
       <div class="mx-8 flex flex-col gap-4 py-6 sm:mx-12">
-        <UText class="text-left text-sm font-bold">Enter your email</UText>
+        <UText class="text-left text-lg font-bold">Sign in with email</UText>
         <UInput
           v-model="email"
           type="email"
@@ -25,16 +25,40 @@
           class="w-full"
         />
 
+        <div class="relative">
+          <UInput
+            :type="isPasswordVisible ? 'text' : 'password'"
+            placeholder="Password"
+            v-model="password"
+            maxLength="250"
+            size="xl"
+          />
+          <span
+            class="absolute inset-y-0 right-0 flex cursor-pointer items-center pr-3"
+            @click="togglePasswordVisibility"
+          >
+            <UIcon
+              :name="
+                isPasswordVisible ? 'i-heroicons-eye' : 'i-heroicons-eye-slash'
+              "
+            ></UIcon>
+          </span>
+        </div>
+
         <UButton
           class="flex w-full justify-center font-bold"
           color="cyan"
-          label="Continue"
+          label="Sign in"
           variant="solid"
           size="md"
           :disabled="!isValidEmail(email)"
           @click="login"
         />
       </div>
+      <p class="text-sm">
+        New to Quasi AI?
+        <NuxtLink to="/auth/sign-up" class="text-[#518aa7]">Sign up</NuxtLink>
+      </p>
     </div>
   </NuxtLayout>
 </template>
@@ -44,15 +68,17 @@ import QuasiLogo from '@/assets/media/svgs/quasiai-logo.vue'
 import OrSeperator from '@/assets/media/svgs/or-seperator.vue'
 import GoogleLogo from '@/assets/media/svgs/signin-google.vue'
 import FacebookLogo from '@/assets/media/svgs/signin-facebook.vue'
+import { isValidEmail } from '@/utils/isValidEmail'
 
 const email = ref('')
-
-const isValidEmail = (email: string) => {
-  const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
-  return emailRegex.test(email)
-}
+const password = ref('')
+const isPasswordVisible = ref(false)
 
 const login = () => {
   console.log('Login with:', email.value)
+}
+
+const togglePasswordVisibility = () => {
+  isPasswordVisible.value = !isPasswordVisible.value
 }
 </script>
