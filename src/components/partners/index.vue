@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-center gap-14">
+  <div class="flex items-center justify-center gap-2 lg:gap-14">
     <Harvard />
     <Udemy />
     <TTU />

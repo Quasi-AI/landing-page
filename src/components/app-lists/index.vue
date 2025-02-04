@@ -1,5 +1,5 @@
 <template>
-  <h1 class="mt-10 text-center text-2xl font-bold">Everything you need</h1>
+  <h1 class="mt-4 text-center text-2xl font-bold">Everything you need</h1>
   <div
     class="mt-5 flex flex-col items-center justify-center space-y-8 md:flex-row md:space-x-8 md:space-y-0"
   >
@@ -36,7 +36,10 @@
   </div>
   <div class="my-10 flex items-center justify-center">
     <NuxtLink to="/auth/login"
-      ><UButton color="cyan" class="flex w-[420px] items-center justify-center">
+      ><UButton
+        color="cyan"
+        class="flex w-fit items-center justify-center lg:w-[420px]"
+      >
         Start Learning now
       </UButton></NuxtLink
     >

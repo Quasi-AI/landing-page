@@ -1,6 +1,10 @@
 <template>
-  <div class="flex items-center justify-between bg-[#C6E6F3] px-8 py-6">
-    <quasiaiLogo />
+  <div
+    class="flex flex-col items-center justify-between bg-[#C6E6F3] px-8 py-6 lg:flex-row"
+  >
+    <div class="py-2 lg:py-0">
+      <quasiaiLogo />
+    </div>
 
     <ul class="flex space-x-2">
       <OkSocial />

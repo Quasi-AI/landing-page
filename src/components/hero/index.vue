@@ -1,6 +1,6 @@
 <template>
   <div class="mt-10 flex flex-col items-center justify-center">
-    <div class="w-[750px] text-center">
+    <div class="w-full text-center lg:w-[750px]">
       <h1 class="text-2xl font-extrabold">
         Transform your learning experience with
         <span class="font-extrabold text-[#6BA7C4]">Quasi AI</span>
@@ -16,8 +16,8 @@
       >
       <UButton color="white" class="text-blue">Watch a demo</UButton>
     </div>
-    <div class="m-12">
-      <VideoTmp />
+    <div class="mt-8">
+      <VideoTmp class="w-full" />
     </div>
   </div>
 </template>
